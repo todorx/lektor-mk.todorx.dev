@@ -713,7 +713,8 @@ function Footer() {
               Лектор-МК
             </div>
             <div style={{ fontSize: 10, color: T.dim, marginTop: 2, fontFamily: 'Outfit, sans-serif' }}>
-              GPL-3.0-or-later
+              GPL-3.0-or-later · Изработено од{' '}
+              <a href="https://todorx.dev/mk/" style={{ color: 'inherit' }}>Тодор Тодоровски</a>
             </div>
           </div>
         </div>
