@@ -4,6 +4,21 @@ const logoSrc = new URL('./assets/logo.png', import.meta.url).href
 
 const GITHUB = 'https://github.com/todorx/lektor-mk'
 const AUTHOR = 'https://todorx.dev/mk/'
+const CHROME = 'https://chromewebstore.google.com/detail/%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%BC%D0%BA/aoenhocfjkejakmpocalnpmginmaomfj?hl=mk'
+const FIREFOX = 'https://addons.mozilla.org/en-US/firefox/addon/lektor-mk/'
+
+function StoreButtons() {
+  return (
+    <>
+      <a className="btn btn-outline" href={CHROME} target="_blank" rel="noopener noreferrer">
+        Преземи за Chrome ↗
+      </a>
+      <a className="btn btn-outline" href={FIREFOX} target="_blank" rel="noopener noreferrer">
+        Преземи за Firefox ↗
+      </a>
+    </>
+  )
+}
 
 // ─── Sections (drive the left rail) ───────────────────────────────────────────
 const SECTIONS = [
@@ -138,9 +153,7 @@ function Hero() {
           Првиот вистински <em>правопис за македонски</em>. Бесплатна, отворена додатка за Firefox и Chrome што проверува правопис и граматика <em>целосно на вашиот уред</em> — без сервери, без сметки.
         </p>
         <div className="cta">
-          <a className="btn btn-outline" href={GITHUB} target="_blank" rel="noopener noreferrer">
-            Преземи од GitHub ↗
-          </a>
+          <StoreButtons />
           <a className="btn btn-ghost" href="#features">Функции ↓</a>
         </div>
         <div className="status">
@@ -401,6 +414,9 @@ function Contact() {
           github.com/todorx/lektor-mk
         </a>
         <CopyButton text={GITHUB} />
+      </div>
+      <div className="cta">
+        <StoreButtons />
       </div>
       <footer className="colophon">
         <span>
