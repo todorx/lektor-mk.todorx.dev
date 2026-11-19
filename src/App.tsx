@@ -131,11 +131,11 @@ function Hero() {
       <div className="hero-main">
         <div className="eyebrow eyebrow-row">
           <Mark />
-          <span>Firefox додаток  /  GPL-3.0</span>
+          <span>Firefox и Chrome  /  GPL-3.0</span>
         </div>
         <h1>Лектор-МК</h1>
         <p className="lede">
-          Првиот вистински <em>правопис за македонски</em>. Бесплатна, отворена Firefox додатка што проверува правопис и граматика <em>целосно на вашиот уред</em> — без сервери, без сметки.
+          Првиот вистински <em>правопис за македонски</em>. Бесплатна, отворена додатка за Firefox и Chrome што проверува правопис и граматика <em>целосно на вашиот уред</em> — без сервери, без сметки.
         </p>
         <div className="cta">
           <a className="btn btn-outline" href={GITHUB} target="_blank" rel="noopener noreferrer">
@@ -162,6 +162,7 @@ function Hero() {
             <span className="tag tag-outline">WebAssembly</span>
             <span className="tag tag-outline">FST</span>
             <span className="tag tag-outline">Firefox</span>
+            <span className="tag tag-outline">Chrome</span>
             <span className="tag tag-outline">GPL-3.0</span>
           </div>
         </div>
@@ -334,7 +335,7 @@ function OpenSource() {
 const faqs = [
   {
     q: 'Кои прелистувачи се поддржани?',
-    a: 'Тековно само Firefox. Додатката користи Manifest V2, кој Chrome го укина. Поддршката за Chrome/Edge е планирана кога Manifest V3 ќе овозможи еквивалентен API.',
+    a: 'Firefox и Chrome. Додатката работи во двата прелистувачи, целосно на вашиот уред.',
   },
   {
     q: 'Дали работи без интернет?',
@@ -343,10 +344,6 @@ const faqs = [
   {
     q: 'Дали мојот текст се праќа некаде?',
     a: 'Никогаш. Нема сервери, нема сметки, нема аналитика. Целиот мотор работи во вашиот прелистувач. Може да го верифицирате со преглед на изворниот код.',
-  },
-  {
-    q: 'Зошто само Firefox, а не Chrome?',
-    a: 'Chrome го укина Manifest V2, кој ни овозможуваше да го вбризгуваме моторот во секоја страница. Manifest V3 сè уште нема доволно API. Firefox продолжи со поддршка на MV2.',
   },
 ]
 
